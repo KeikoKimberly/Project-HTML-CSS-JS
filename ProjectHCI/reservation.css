@@ -1,0 +1,165 @@
+*{
+    font-family: Georgia, serif;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 2.5rem;
+    background-color: #303841;
+    color: #eeeeee;
+  }
+
+  .header-container img{
+    width: 50px;
+    height: 50px;
+}
+  
+  .title {
+    font-size: 250%;
+    font-weight: bold;
+  }
+  
+  .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .menu a{
+    padding: 0 2rem;
+    font-size: 150%;
+  }
+  
+  .menu a:link {
+    color: grey;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .menu a:visited {
+    color: grey;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .menu a:hover {
+    color: #d72323;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .menu a:active {
+    color: grey;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 2rem;
+    background-color: #303841;
+    color: grey;
+    text-align: justify;
+
+}
+
+.icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container img{
+    width: 4rem;
+    padding: 1rem;
+}
+
+.footer-container p{
+    padding: 2rem;
+}
+
+.content-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 1rem 0;
+    background-color: #fff5eb;
+    font-size: 100%;
+}
+
+.component-container{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+input{
+    width: 30%;
+}
+
+@media only screen and (max-width: 800px) {
+    .header-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 2.5rem;
+        background-color: #303841;
+        color: #eeeeee;
+    }
+    
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .menu a{
+        padding: 0.5rem 2rem;
+    }
+    
+    .title{
+        margin: 1rem 0;
+    }
+    
+    .content-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .component-container{
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    .footer-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #303841;
+        color: grey;
+        padding: 1rem 2rem;
+        flex-wrap: wrap;
+    }
+}
